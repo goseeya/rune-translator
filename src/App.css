@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+
+:root {
+  --rune-bg: #1e1e2f;
+  --rune-fg: #e0e0f0;
+  --rune-accent: #8a6fc4;
+  --rune-border: #444;
+  --rune-shadow: 0 0 10px rgba(138, 111, 196, 0.4);
+}
+
+body {
+  background-color: var(--rune-bg);
+  color: var(--rune-fg);
+  font-family: "Uncial Antiqua", serif;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #2b2b3d;
+  border: 1px solid var(--rune-border);
+  border-radius: 12px;
+  box-shadow: var(--rune-shadow);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--rune-accent);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px var(--rune-accent);
+}
+
+input[type="number"] {
+  padding: 0.6em 1em;
+  font-size: 1.1rem;
+  border: 1px solid var(--rune-border);
+  border-radius: 6px;
+  background: #222;
+  color: var(--rune-fg);
+  outline: none;
+}
+
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--rune-accent);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 6px rgba(138, 111, 196, 0.5);
+}
+
+button:hover {
+  background-color: #a98de0;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.card {
+  background: #2e2e40;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: var(--rune-shadow);
+  margin-top: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 1rem;
+  border: 1px solid var(--rune-border);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.read-about-runes {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  font-style: italic;
+}
